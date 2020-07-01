@@ -172,7 +172,8 @@ canvas {
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
-  will-change: transform; }
+  will-change: transform;
+  align-items: flex-start; }
 
 .glide__slide, .glide__slides--dragging {
   -webkit-user-select: none;
@@ -837,6 +838,9 @@ body {
     background-image: url(../img/howit-bg.svg);
     background-position: 50% 100%;
     z-index: 1; }
+  @media (min-width: 650px) and (max-width: 991.98px) {
+    .how-it {
+      padding-bottom: 170px !important; } }
 
 .how-it__title {
   text-align: center;
@@ -1075,7 +1079,7 @@ body {
 
   .how-it__text {
     font-size: 26px; } }
-@media only screen and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .home-promo {
     padding-top: 140px; }
     .home-promo:before {
@@ -1111,13 +1115,23 @@ body {
     position: -webkit-sticky;
     top: 0;
     width: 100%;
-    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     z-index: 9;
     margin-bottom: 70px;
-    height: auto !important; }
+    height: auto !important;
+    background: #fff;
+    padding-bottom: 15px; }
 
+  .how-imgs {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative; } }
+  @media (max-width: 991.98px) and (orientation: landscape) {
+    .how-imgs {
+      max-width: 50vh; } }
+
+@media (max-width: 991.98px) {
   .how-it__descr {
     width: 100%;
     height: auto !important; }
