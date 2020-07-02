@@ -908,6 +908,18 @@ body
 		flex-direction: column
 		justify-content: center
 		align-items: center
+	@media (orientation: landscape)
+		position: sticky
+		position: -webkit-sticky
+		top: calc(50vh - 800px / 2)
+		min-height: 800px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	@media (max-width: 991.98px) and (orientation: landscape)
+		min-height: 400px
+		top: calc(50vh - 400px / 2)
 	img:not(:first-child)
 		position: absolute
 		top: 50%
@@ -927,6 +939,8 @@ body
 .how-it__descr
 	position: relative
 	width: 42%
+	@media (max-width: 991.98px) and (orientation: portrait)
+		width: 100%
 
 .how-it__text
 	margin: 0
@@ -940,6 +954,8 @@ body
 	justify-content: center
 	@media (max-width: 991.98px)
 		min-height: 400px
+	@media (max-width: 991.98px) and (orientation: portrait)
+		text-align: center
 
 .features	
 	background-image: linear-gradient(180deg, #e4eef9 0, #f6f9fd)
@@ -1116,6 +1132,28 @@ body
 	.how-it__text
 		font-size: 26px
 
+@media (max-width: 991.98px) and (orientation: portrait)
+	.how-imgs
+		max-width: 500px
+		margin: 0 auto
+		position: relative
+
+	.how-it__wrap
+		flex-direction: column
+
+	.how-it__imgs
+		position: sticky
+		position: -webkit-sticky
+		top: 0
+		width: 100%
+		margin-left: auto
+		margin-right: auto
+		z-index: 9
+		margin-bottom: 70px
+		height: auto !important
+		background: #fff
+		padding-bottom: 15px
+
 @media (max-width: 991.98px)
 	.home-promo
 		padding-top: 140px
@@ -1144,39 +1182,6 @@ body
 
 	.how-it
 		min-height: auto
-
-	.how-it__wrap
-		flex-direction: column
-
-	.how-it__imgs
-		position: sticky
-		position: -webkit-sticky
-		top: 0
-		width: 100%
-		margin-left: auto
-		margin-right: auto
-		z-index: 9
-		margin-bottom: 70px
-		height: auto !important
-		background: #fff
-		padding-bottom: 15px
-
-	.how-imgs
-		max-width: 500px
-		margin: 0 auto
-		position: relative
-		@media (orientation: landscape)
-			max-width: 50vh
-
-	.how-it__descr
-		width: 100%
-		height: auto !important
-
-	.how-it__text
-		margin-left: auto
-		margin-right: auto
-		text-align: center
-		font-size: 30px
 
 	.features__item-title
 		font-size: 18px
