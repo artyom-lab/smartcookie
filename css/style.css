@@ -1804,10 +1804,10 @@ body {
   padding-top: 160px;
   position: relative;
   z-index: 3;
-  background: linear-gradient(0deg, transparent 20%, #d3e4f5); }
+  background: linear-gradient(0deg, #FFF 20%, #d3e4f5); }
   @media (min-width: 992px) {
     .how-works {
-      background: url(../img/bg.svg) no-repeat center bottom, linear-gradient(0deg, transparent 20%, #d3e4f5); } }
+      background: url(../img/bg.svg) no-repeat center bottom, linear-gradient(0deg, #FFF 20%, #d3e4f5); } }
 
 .how-works__title {
   font-size: 54px;
@@ -2059,7 +2059,7 @@ body {
   padding-top: 60px; }
   @media (min-width: 992px) {
     .section-connection {
-      background: linear-gradient(0deg, transparent, #ECF3FB); } }
+      background: linear-gradient(0deg, #FFF, #ECF3FB); } }
   @media (max-width: 575.98px) {
     .section-connection {
       padding-top: 0; } }
