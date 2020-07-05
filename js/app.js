@@ -55,7 +55,7 @@ let changeImgAndText = () => {
 			a = document.querySelectorAll(".how-it__img"),
 			r = document.querySelectorAll(".how-it__text"),
 			l = document.querySelector('.how-it__text[data-text="0"]'),
-			d = document.querySelector('.how-it__text[data-text="4"]'),
+			// d = document.querySelector('.how-it__text[data-text="4"]'),
 			m = a[0].offsetHeight;
 		// r.forEach((e, t) => {
 		// 		e.style.minHeight = m;
@@ -69,9 +69,9 @@ let changeImgAndText = () => {
 			"scroll",
 			() => {
 				(textItemFirstTop = parseInt(l.getBoundingClientRect().top + m / 2)),
-				(textItemLastTop = parseInt(d.getBoundingClientRect().top + m / 2)),
-				(imgsWrapBottom = t - parseInt(i.getBoundingClientRect().bottom)),
-				(imgActiveBottom = t - parseInt(a[4].getBoundingClientRect().bottom));
+				// (textItemLastTop = parseInt(d.getBoundingClientRect().top + m / 2)),
+				(imgsWrapBottom = t - parseInt(i.getBoundingClientRect().bottom));
+				// (imgActiveBottom = t - parseInt(a[4].getBoundingClientRect().bottom));
 				var o = window.pageYOffset || document.documentElement.scrollTop;
 				o > u ?
 					(textItemFirstTop - t / 2 <= 0 &&
@@ -92,7 +92,7 @@ let changeImgAndText = () => {
 									a[t].classList.add("is-active");
 							}
 						}),
-						imgsWrapBottom >= imgActiveBottom &&
+						// imgsWrapBottom >= imgActiveBottom &&
 						a.forEach((e, t) => {
 							// e.classList.contains("is-fixed") && (e.classList.remove("is-fixed"), (e.style.left = "0"), (e.style.bottom = "0"));
 						})) :
@@ -115,7 +115,7 @@ let changeImgAndText = () => {
 									a[t].classList.add("is-active");
 							}
 						}),
-						imgsWrapBottom >= imgActiveBottom &&
+						// imgsWrapBottom >= imgActiveBottom &&
 						a.forEach((e, t) => {
 							// e.classList.contains("is-fixed") || (e.classList.add("is-fixed"), (e.style.left = s + "px"), (e.style.top = "auto"), (e.style.bottom = "50%"));
 						})),

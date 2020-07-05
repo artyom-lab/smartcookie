@@ -627,7 +627,7 @@ body {
 
   .footer__nav-link {
     margin: 7px 0;
-    width: 33%; }
+    width: 50%; }
 
   .footer__socials {
     flex: 0 0 auto; }
@@ -1598,7 +1598,9 @@ body {
 
   .privacy__text {
     font-size: 16px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden; }
 
   .privacy__subtitle {
     font-size: 24px; }
